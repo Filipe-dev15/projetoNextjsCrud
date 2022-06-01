@@ -3,16 +3,16 @@
 export default class Cliente {
     #id: string
     #nome: string
-    #idade: Number
+    #idade: string
 
-    constructor( nome:string, idade: Number, id: string = null){
+    constructor( nome:string, idade: string, id: string = null){
         this.#nome = nome
         this.#id = id
         this.#idade = idade
     }
 
     static vaziu(){
-        return new Cliente('', 0)
+        return new Cliente('', null)
     }
 
     get id(){
